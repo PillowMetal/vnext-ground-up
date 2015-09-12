@@ -6,7 +6,7 @@ public class GroundUpDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptions builder)
     {
-        builder.UseSqlServer(@"Server=(localdb)\v11.0;Database=TodoItems;Trusted_Connection=True;");
+        builder.UseSqlServer(@"Data Source=contractor\sqlexpress;Initial Catalog=test;Integrated Security=True;");
     }
 }
 
